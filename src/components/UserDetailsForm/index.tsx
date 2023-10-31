@@ -1,4 +1,3 @@
-import { useUserDetails } from "components/UserDetailsForm/useUserDetails";
 import {
   Box,
   Paper,
@@ -8,6 +7,7 @@ import {
   Button,
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import { useUserDetails } from "components/UserDetailsForm/useUserDetails";
 import t from "translations";
 
 interface USER_DETAILS_FORM_PROPS {
@@ -26,14 +26,16 @@ const Home: React.FC<USER_DETAILS_FORM_PROPS> = ({ onSubmit }) => {
     <Box>
       <Paper sx={{ borderRadius: "15px", height: "70vh" }}>
         <Typography variant='h4' sx={{ fontWeight: "bold" }}>
-          WELCOME!
+          {t("welcomeHeader")}
         </Typography>
         <Typography
           variant='h6'
           sx={{
             whiteSpace: "pre-line",
           }}
-          color='#C1C2C5'>{`Enter a user's name, email, and any other info to generate an email sequence consisting of an invitation, a promotion, and a welcome email.`}</Typography>
+          color='#C1C2C5'>
+          {t("getStartedHeader")}
+        </Typography>
         <Box
           sx={{
             width: "80%",
@@ -44,7 +46,7 @@ const Home: React.FC<USER_DETAILS_FORM_PROPS> = ({ onSubmit }) => {
             <TextField
               fullWidth
               id='name_input'
-              label='Name'
+              label={t("nameFieldLabel")}
               variant='outlined'
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                 setName(event.target.value);
@@ -55,7 +57,7 @@ const Home: React.FC<USER_DETAILS_FORM_PROPS> = ({ onSubmit }) => {
             <TextField
               fullWidth
               id='email_input'
-              label='Email'
+              label={t("emailFieldLabel")}
               variant='outlined'
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                 setEmail(event.target.value);
@@ -74,7 +76,7 @@ const Home: React.FC<USER_DETAILS_FORM_PROPS> = ({ onSubmit }) => {
             <TextField
               fullWidth
               id='user_info_input'
-              label={`Enter any info you'd want to about the user`}
+              label={t("infoFieldLabel")}
               variant='outlined'
               onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
                 setInfo(event.target.value);
@@ -92,7 +94,7 @@ const Home: React.FC<USER_DETAILS_FORM_PROPS> = ({ onSubmit }) => {
           variant='contained'
           onClick={() => onSubmit(name, email, info)}
           endIcon={<SendIcon />}>
-          Send
+          {t("sendButton")}
         </Button>
       </Paper>
     </Box>

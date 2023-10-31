@@ -5,10 +5,12 @@ import {
   Button,
   BottomNavigation,
   BottomNavigationAction,
+  Typography,
 } from "@mui/material";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
 import WavingHandIcon from "@mui/icons-material/WavingHand";
+import t from "translations";
 interface EMAIL_BOX_PROPS {
   emails: string[];
   onButtonClick: (flag: boolean) => void;
@@ -16,17 +18,19 @@ interface EMAIL_BOX_PROPS {
 }
 
 const navigationTabs = [
-  { text: "Invite mail", icon: <ContactMailIcon /> },
-  { text: "Promotional mail", icon: <CardGiftcardIcon /> },
-  { text: "Welcome mail", icon: <WavingHandIcon /> },
+  { text: t("inviteMailTabTitle"), icon: <ContactMailIcon /> },
+  { text: t("promotionalMailTabTitle"), icon: <CardGiftcardIcon /> },
+  { text: t("welcomeMailTabTitle"), icon: <WavingHandIcon /> },
 ];
-
+const INITIAL_NAVIGATION_TAB = 0;
 const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
   emails,
   onButtonClick,
   showButton,
 }) => {
-  const [navigationValue, setNavigationValue] = useState<number>(0);
+  const [navigationValue, setNavigationValue] = useState<number>(
+    INITIAL_NAVIGATION_TAB
+  );
 
   return (
     <Box>
@@ -57,13 +61,14 @@ const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
             />
           ))}
         </BottomNavigation>
+        T
       </Box>
       {showButton && (
         <Button
           variant='contained'
           onClick={() => onButtonClick(true)}
           sx={{ margin: "20px auto" }}>
-          Generate emails for another user
+          {t("generateEmailsForNewUser")}
         </Button>
       )}
     </Box>
