@@ -10,12 +10,8 @@ const NO_ERROR_MESSAGE = "";
 export const useHome = () => {
   useEffect(() => {
     APIs.test()
-      .then((res) => {
-        console.log(res);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+      .then((res) => {})
+      .catch((err) => {});
   }, []);
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
