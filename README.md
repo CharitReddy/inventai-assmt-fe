@@ -43,51 +43,8 @@ Clicking on the "Generate new emails" will take the user to the form again.
 
 ### `Folder Structure`
 
-.
-├── README.md <br/>
-├── package-lock.json<br/>
-├── package.json<br/>
-├── public<br/>
-│ ├── assets<br/>
-│ │ └── images<br/>
-│ │ ├── app_background.png<br/>
-│ │ └── image_not_available.png<br/>
-│ ├── favicon.ico<br/>
-│ ├── index.html<br/>
-│ ├── logo192.png<br/>
-│ ├── logo512.png<br/>
-│ ├── manifest.json<br/>
-│ ├── r2-d2_logo.png<br/>
-│ └── robots.txt<br/>
-├── src<br/>
-│ ├── App.css<br/>
-│ ├── App.test.tsx<br/>
-│ ├── App.tsx<br/>
-│ ├── components<br/>
-│ │ ├── EmailBox<br/>
-│ │ │ └── index.tsx<br/>
-│ │ └── UserDetailsForm<br/>
-│ │ ├── index.tsx<br/>
-│ │ └── useUserDetails.ts<br/>
-│ ├── index.css<br/>
-│ ├── index.tsx<br/>
-│ ├── logo.svg<br/>
-│ ├── pages<br/>
-│ │ └── Home<br/>
-│ │ ├── index.tsx<br/>
-│ │ └── useHome.ts<br/>
-│ ├── react-app-env.d.ts<br/>
-│ ├── reportWebVitals.ts<br/>
-│ ├── services<br/>
-│ │ ├── apiCalls.ts<br/>
-│ │ └── apiClient.ts<br/>
-│ ├── setupTests.ts<br/>
-│ ├── translations<br/>
-│ │ ├── en.ts<br/>
-│ │ └── index.ts<br/>
-│ └── utils<br/>
-│ └── debounce.ts<br/>
-└── tsconfig.json<br/>
+![image](https://github.com/CharitReddy/inventai-assmt-fe/assets/41099525/b687ff45-7457-41ed-91ba-a02cdc3cd4b7)
+
 
 ### `env file`
 
