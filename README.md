@@ -44,50 +44,50 @@ Clicking on the "Generate new emails" will take the user to the form again.
 ### `Folder Structure`
 
 .
-├── README.md
-├── package-lock.json
-├── package.json
-├── public
-│ ├── assets
-│ │ └── images
-│ │ ├── app_background.png
-│ │ └── image_not_available.png
-│ ├── favicon.ico
-│ ├── index.html
-│ ├── logo192.png
-│ ├── logo512.png
-│ ├── manifest.json
-│ ├── r2-d2_logo.png
-│ └── robots.txt
-├── src
-│ ├── App.css
-│ ├── App.test.tsx
-│ ├── App.tsx
-│ ├── components
-│ │ ├── EmailBox
-│ │ │ └── index.tsx
-│ │ └── UserDetailsForm
-│ │ ├── index.tsx
-│ │ └── useUserDetails.ts
-│ ├── index.css
-│ ├── index.tsx
-│ ├── logo.svg
-│ ├── pages
-│ │ └── Home
-│ │ ├── index.tsx
-│ │ └── useHome.ts
-│ ├── react-app-env.d.ts
-│ ├── reportWebVitals.ts
-│ ├── services
-│ │ ├── apiCalls.ts
-│ │ └── apiClient.ts
-│ ├── setupTests.ts
-│ ├── translations
-│ │ ├── en.ts
-│ │ └── index.ts
-│ └── utils
-│ └── debounce.ts
-└── tsconfig.json
+├── README.md <br/>
+├── package-lock.json<br/>
+├── package.json<br/>
+├── public<br/>
+│ ├── assets<br/>
+│ │ └── images<br/>
+│ │ ├── app_background.png<br/>
+│ │ └── image_not_available.png<br/>
+│ ├── favicon.ico<br/>
+│ ├── index.html<br/>
+│ ├── logo192.png<br/>
+│ ├── logo512.png<br/>
+│ ├── manifest.json<br/>
+│ ├── r2-d2_logo.png<br/>
+│ └── robots.txt<br/>
+├── src<br/>
+│ ├── App.css<br/>
+│ ├── App.test.tsx<br/>
+│ ├── App.tsx<br/>
+│ ├── components<br/>
+│ │ ├── EmailBox<br/>
+│ │ │ └── index.tsx<br/>
+│ │ └── UserDetailsForm<br/>
+│ │ ├── index.tsx<br/>
+│ │ └── useUserDetails.ts<br/>
+│ ├── index.css<br/>
+│ ├── index.tsx<br/>
+│ ├── logo.svg<br/>
+│ ├── pages<br/>
+│ │ └── Home<br/>
+│ │ ├── index.tsx<br/>
+│ │ └── useHome.ts<br/>
+│ ├── react-app-env.d.ts<br/>
+│ ├── reportWebVitals.ts<br/>
+│ ├── services<br/>
+│ │ ├── apiCalls.ts<br/>
+│ │ └── apiClient.ts<br/>
+│ ├── setupTests.ts<br/>
+│ ├── translations<br/>
+│ │ ├── en.ts<br/>
+│ │ └── index.ts<br/>
+│ └── utils<br/>
+│ └── debounce.ts<br/>
+└── tsconfig.json<br/>
 
 ### `env file`
 
