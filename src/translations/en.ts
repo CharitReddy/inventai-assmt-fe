@@ -9,7 +9,7 @@ export const translations: Translations = {
   nameFieldLabel: "Name",
   emailFieldLabel: "Email",
   infoFieldLabel: `Enter any info you'd want to about the user`,
-  sendButton: "Send",
+  sendButton: "Generate",
 
   //useHome Hook texts.
   emailGenerationApiError: "Some error occurred, please try again",
