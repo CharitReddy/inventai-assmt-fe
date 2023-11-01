@@ -7,7 +7,7 @@ const headers = {
 
 export const APIs = {
   generateEmails(requestData: any) {
-    return post(`/generate_emails`, requestData, { headers });
+    return post(`/generate-emails`, requestData, { headers });
   },
   test() {
     return get("/");
