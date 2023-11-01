@@ -10,6 +10,6 @@ export const APIs = {
     return post(`/generate_emails`, requestData, { headers });
   },
   test() {
-    return get("/hello/");
+    return get("/");
   },
 };

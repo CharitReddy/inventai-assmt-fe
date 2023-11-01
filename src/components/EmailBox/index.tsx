@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
-import WavingHandIcon from "@mui/icons-material/WavingHand";
+import InfoIcon from "@mui/icons-material/Info";
 import t from "translations";
 interface EMAIL_BOX_PROPS {
   emails: string[];
@@ -19,7 +19,7 @@ interface EMAIL_BOX_PROPS {
 const navigationTabs = [
   { text: t("inviteMailTabTitle"), icon: <ContactMailIcon /> },
   { text: t("promotionalMailTabTitle"), icon: <CardGiftcardIcon /> },
-  { text: t("welcomeMailTabTitle"), icon: <WavingHandIcon /> },
+  { text: t("welcomeMailTabTitle"), icon: <InfoIcon /> },
 ];
 const INITIAL_NAVIGATION_TAB = 0;
 const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
