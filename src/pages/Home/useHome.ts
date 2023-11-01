@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { APIs } from "services/apiCalls";
 import t from "translations";
 interface USER_INFO {
@@ -8,6 +8,16 @@ interface USER_INFO {
 }
 const NO_ERROR_MESSAGE = "";
 export const useHome = () => {
+  useEffect(() => {
+    APIs.test()
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [showErrorMessage, setShowErrorMessage] = useState<boolean>(false);
   const [errorMessage, setErrorMessage] = useState<string>(NO_ERROR_MESSAGE);
