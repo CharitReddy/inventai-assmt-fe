@@ -16,6 +16,9 @@ interface EMAIL_BOX_PROPS {
   showButton: boolean;
 }
 
+// Component to display generated emails.
+// Bottom Navigation can be used to switch between the 3 emails.
+
 const navigationTabs = [
   { text: t("inviteMailTabTitle"), icon: <ContactMailIcon /> },
   { text: t("promotionalMailTabTitle"), icon: <CardGiftcardIcon /> },

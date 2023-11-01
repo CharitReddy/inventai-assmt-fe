@@ -3,6 +3,8 @@ import SendIcon from "@mui/icons-material/Send";
 import { useUserDetails } from "components/UserDetailsForm/useUserDetails";
 import t from "translations";
 
+// Component to display user details form to enter a user's basic details (name, email, info).
+// This is only the view part (JSX), the entire state management is in the useUserDetails custom hook.
 interface USER_DETAILS_FORM_PROPS {
   onSubmit: (name: string, email: string, info: string) => void;
 }
