@@ -39,6 +39,11 @@ export const useHome = () => {
     setShowForm(false);
     generateEmails(userInfo);
   };
+
+  const onGenerateNewClick = (showFormFlag: boolean) => {
+    setShowForm(showFormFlag);
+    setGeneratedEmails([]);
+  };
   return {
     onUserFormSubmit,
     generatedEmails,
@@ -47,5 +52,6 @@ export const useHome = () => {
     isLoading,
     showErrorMessage,
     errorMessage,
+    onGenerateNewClick,
   };
 };

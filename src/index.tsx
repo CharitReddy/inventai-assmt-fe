@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const darkTheme = createTheme({ palette: { mode: "dark" } });
 const root = ReactDOM.createRoot(

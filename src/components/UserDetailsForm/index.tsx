@@ -1,11 +1,4 @@
-import {
-  Box,
-  Paper,
-  TextField,
-  Typography,
-  TextareaAutosize,
-  Button,
-} from "@mui/material";
+import { Box, Paper, TextField, Typography, Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { useUserDetails } from "components/UserDetailsForm/useUserDetails";
 import t from "translations";

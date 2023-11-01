@@ -8,10 +8,10 @@ const Home = () => {
     onUserFormSubmit,
     generatedEmails,
     showForm,
-    setShowForm,
     isLoading,
     showErrorMessage,
     errorMessage,
+    onGenerateNewClick,
   } = useHome();
 
   return (
@@ -30,7 +30,7 @@ const Home = () => {
         <EmailBox
           emails={generatedEmails}
           showButton={!showForm}
-          onButtonClick={setShowForm}
+          onButtonClick={onGenerateNewClick}
         />
       )}
 

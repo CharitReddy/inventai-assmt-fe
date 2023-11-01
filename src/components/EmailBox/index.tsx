@@ -30,7 +30,7 @@ const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
   const [navigationValue, setNavigationValue] = useState<number>(
     INITIAL_NAVIGATION_TAB
   );
-
+  const showGenerateNewFlag = showButton && emails.length > 0;
   return (
     <Box>
       <Box sx={{ margin: "auto" }}>
@@ -63,7 +63,7 @@ const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
           ))}
         </BottomNavigation>
       </Box>
-      {showButton && (
+      {showGenerateNewFlag && (
         <Button
           variant='contained'
           onClick={() => onButtonClick(true)}
