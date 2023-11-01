@@ -43,51 +43,8 @@ Clicking on the "Generate new emails" will take the user to the form again.
 
 ### `Folder Structure`
 
-.
-├── README.md
-├── package-lock.json
-├── package.json
-├── public
-│ ├── assets
-│ │ └── images
-│ │ ├── app_background.png
-│ │ └── image_not_available.png
-│ ├── favicon.ico
-│ ├── index.html
-│ ├── logo192.png
-│ ├── logo512.png
-│ ├── manifest.json
-│ ├── r2-d2_logo.png
-│ └── robots.txt
-├── src
-│ ├── App.css
-│ ├── App.test.tsx
-│ ├── App.tsx
-│ ├── components
-│ │ ├── EmailBox
-│ │ │ └── index.tsx
-│ │ └── UserDetailsForm
-│ │ ├── index.tsx
-│ │ └── useUserDetails.ts
-│ ├── index.css
-│ ├── index.tsx
-│ ├── logo.svg
-│ ├── pages
-│ │ └── Home
-│ │ ├── index.tsx
-│ │ └── useHome.ts
-│ ├── react-app-env.d.ts
-│ ├── reportWebVitals.ts
-│ ├── services
-│ │ ├── apiCalls.ts
-│ │ └── apiClient.ts
-│ ├── setupTests.ts
-│ ├── translations
-│ │ ├── en.ts
-│ │ └── index.ts
-│ └── utils
-│ └── debounce.ts
-└── tsconfig.json
+![image](https://github.com/CharitReddy/inventai-assmt-fe/assets/41099525/b687ff45-7457-41ed-91ba-a02cdc3cd4b7)
+
 
 ### `env file`
 
