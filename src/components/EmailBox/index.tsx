@@ -5,7 +5,6 @@ import {
   Button,
   BottomNavigation,
   BottomNavigationAction,
-  Typography,
 } from "@mui/material";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
@@ -43,6 +42,8 @@ const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
             padding: "25px",
             margin: "auto",
             borderRadius: "15px",
+            maxHeight: "80vh",
+            overflowX: "scroll",
           }}>
           {emails[navigationValue]}
         </Paper>
@@ -61,7 +62,6 @@ const EmailBox: React.FC<EMAIL_BOX_PROPS> = ({
             />
           ))}
         </BottomNavigation>
-        T
       </Box>
       {showButton && (
         <Button
